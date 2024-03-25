@@ -1,0 +1,38 @@
+<div class="container-l">
+    <div class="container text-center">
+        <h1>[Y Contact]</h1>
+        <h3>[Fill The Following Contact Form]</h3>
+    </div>
+</div>
+
+<form>
+    <div class="container-sm">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">Message</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                Please provide a valid message.
+                </div>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Ready For Checkout?</label>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+            <script>
+            const submitButton = document.getElementById('submitButton');
+            submitButton.addEventListener('click', function() {
+                // Display an alert when the submit button is clicked
+                alert('Thank you for your message, we will contact you soon!');
+            });
+            </script>
+    </div>
+</form>
