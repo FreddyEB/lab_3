@@ -30,8 +30,11 @@
             <script>
             const submitButton = document.getElementById('submitButton');
             submitButton.addEventListener('click', function() {
-                // Display an alert when the submit button is clicked
-                alert('Thank you for your message, we will contact you soon!');
+                const alertElement = document.createElement('div');
+                alertElement.classList.add('alert', 'alert-primary');
+                alertElement.setAttribute('role', 'alert');
+                alertElement.innerText = 'Thank you for your message, we will contact you soon.';
+                document.body.appendChild(alertElement);
             });
             </script>
     </div>
